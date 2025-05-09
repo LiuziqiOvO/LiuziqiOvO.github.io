@@ -13,4 +13,4 @@ jobs:
         pattern: >
             _posts/*.md
             _posts/*.markdown
-        asset_repo: https://${{ screts.GITEE_PUSH_DRDRXP_REPO }}@gitee.com/Lzq647/bed.git
+        asset_repo: https://${{ secrets.GITEE_PUSH_DRDRXP_REPO }}@gitee.com/Lzq647/bed.git
