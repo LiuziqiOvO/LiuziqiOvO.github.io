@@ -1,0 +1,105 @@
+# Butterfly 主题配置
+
+# 导航菜单配置
+menu:
+  首页: / || fas fa-home
+  归档: /archives/ || fas fa-archive
+  标签: /tags/ || fas fa-tags
+  分类: /categories/ || fas fa-folder-open
+  关于: /about/ || fas fa-heart
+
+# 网站图标和头像
+favicon: /img/favicon.png
+avatar:
+  img: /img/avatar.png
+  effect: true
+
+# 主页文章节选
+index_post_content:
+  method: 2
+  length: 500
+
+# 侧边栏设置
+aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+  card_author:
+    enable: true
+    description: '欢迎来到我的博客'
+    button:
+      enable: true
+      icon: fab fa-github
+      text: Follow Me
+      link: https://github.com/
+  card_announcement:
+    enable: true
+    content: 欢迎访问本站，这里会分享一些技术文章和生活感悟。
+  card_recent_post:
+    enable: true
+    limit: 5
+    sort: date
+  card_categories:
+    enable: true
+    limit: 8
+    expand: none
+  card_tags:
+    enable: true
+    limit: 40
+    color: false
+    orderby: random
+
+# 文章目录设置
+toc:
+  enable: true
+  number: true
+  style_simple: false
+
+# 代码块设置
+highlight_theme: mac
+code_word_wrap: true
+highlight_copy: true
+highlight_lang: true
+
+# 社交链接
+social:
+  Github: https://github.com || fab fa-github
+  E-Mail: mailto:your-email@example.com || fas fa-envelope
+
+# 页脚设置
+footer:
+  owner:
+    enable: true
+    since: 2024
+  custom_text: 感谢访问！
+  copyright: true
+
+# 文章版权声明
+post_copyright:
+  enable: true
+  decode: false
+  license: CC BY-NC-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+
+# 评论系统
+comments:
+  use: Waline
+  text: true
+  count: true
+  lazyload: true
+
+# 页面加载动画
+preloader: true
+
+# 图片预览
+fancybox: true
+
+# 网页特效
+butterfly_article_double_row: true
+activate_power_mode: true
+fireworks:
+  enable: true
+  zIndex: 9999
+  mobile: false
