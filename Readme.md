@@ -11,6 +11,9 @@ npm run server
 - [x] SR-IOV
 - [ ] 
 
+# 
+添加github action：md2zhihu，自动把_post文件夹下的md文件转换为知乎文章格式，放在仓库的另一个分支下。
+
 # AI LOG
 我已经帮你完成了博客的美化工作，主要完成了以下内容：
 

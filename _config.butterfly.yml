@@ -16,8 +16,9 @@ avatar:
 
 # 主页文章节选
 index_post_content:
-  method: 2
-  length: 500
+  method: 3
+  length: 300
+  excerpt_all: true
 
 # 侧边栏设置
 aside:
@@ -98,8 +99,24 @@ fancybox: true
 
 # 网页特效
 butterfly_article_double_row: true
-activate_power_mode: true
+activate_power_mode: false
 fireworks:
-  enable: true
+  enable: false
   zIndex: 9999
   mobile: false
+
+# 页面动画效果
+pacman:
+  enable: false
+canvas_ribbon:
+  enable: false
+  size: 150
+  alpha: 0.6
+  zIndex: -1
+  click_to_change: true
+  mobile: false
+
+# 自定义样式
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
