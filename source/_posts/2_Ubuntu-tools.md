@@ -16,13 +16,11 @@ tags:
 
 ## 编译、调试、性能分析工具
 
-
 使用objdump查看反汇编：
 
 ```bash
 objdump -d [executable] > [output]
 ```
-
 
 ### Coredump
 
@@ -60,9 +58,14 @@ perf record -e cache-misses
 ```
 
 **生成火焰图**
+
+项目地址：https://github.com/brendangregg/FlameGraph
+```bash
 perf record -g -F 99
 跑你要测试的程序
-
 perf script -i perf.data > out1.perf 
 ../FlameGraph-master/stackcollapse-perf.pl out1.perf > out1.floded
 ../FlameGraph-master/flamegraph.pl out1.floded > out1.svg
+```
+
+![img](../img/flame.png)
