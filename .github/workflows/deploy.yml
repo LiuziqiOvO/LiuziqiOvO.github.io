@@ -3,37 +3,66 @@ name: Deploy Hexo to GitHub Pages
 on:
   push:
     branches: [ master, main ]
-  pull_request:
-    branches: [ master, main ]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     
     steps:
     - name: Checkout 🛎️
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         fetch-depth: 0
         
     - name: Setup Node.js 📦
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@v4
       with:
         node-version: '18'
         cache: 'npm'
         
-    - name: Install Dependencies 🔧
-      run: npm install
+    - name: Setup Pages 📄
+      uses: actions/configure-pages@v4
       
+    - name: Install Dependencies 🔧
+      run: npm ci
+      
+    - name: Verify Theme Installation 🎨
+      run: |
+        echo "Checking butterfly theme..."
+        if [ -d "node_modules/hexo-theme-butterfly" ]; then
+          echo "✅ Butterfly theme found in node_modules"
+          ls -la node_modules/hexo-theme-butterfly/
+        else
+          echo "❌ Butterfly theme not found in node_modules"
+          exit 1
+        fi
+        
     - name: Build Hexo 🔨
       run: |
         npm run clean
         npm run build
         
-    - name: Deploy to GitHub Pages 🚀
-      uses: peaceiris/actions-gh-pages@v3
+    - name: Upload artifact 📤
+      uses: actions/upload-pages-artifact@v3
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
-        publish_branch: gh-pages
-        force_orphan: true 
+        path: ./public
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4 
