@@ -1,0 +1,12 @@
+.git
+node_modules
+public
+db.json
+.github
+.gitignore
+Dockerfile
+.dockerignore
+docker-compose.yml
+README4ai.md
+*.log
+.DS_Store 

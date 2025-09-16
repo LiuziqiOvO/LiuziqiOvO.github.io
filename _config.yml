@@ -102,3 +102,10 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+# 搜索数据库
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html

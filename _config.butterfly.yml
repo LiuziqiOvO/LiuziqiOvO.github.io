@@ -6,12 +6,13 @@ menu:
   归档: /archives/ || fas fa-archive
   标签: /tags/ || fas fa-tags
   分类: /categories/ || fas fa-folder-open
+  友链: /links/ || fas fa-link
   关于: /about/ || fas fa-heart
 
 # 网站图标和头像
-favicon: /img/favicon.png
+favicon: /img/favicon.svg
 avatar:
-  img: /img/avatar.png
+  img: /img/avatar.svg
   effect: true
 
 # 主页文章节选
@@ -34,7 +35,7 @@ aside:
       enable: true
       icon: fab fa-github
       text: Follow Me
-      link: https://github.com/
+      link: https://github.com/LiuziqiOvO
   card_announcement:
     enable: true
     content: 欢迎访问本站，这里会分享一些技术文章和生活感悟。
@@ -116,7 +117,51 @@ canvas_ribbon:
   click_to_change: true
   mobile: false
 
+# 搜索功能
+local_search:
+  enable: true
+  preload: false
+  CDN:
+
+# 右下角按钮
+rightside:
+  enable: true
+  hide_threshold: 500
+  show_percent: true
+  total_progress: true
+
+# 社交链接
+social:
+  fab fa-github: https://github.com/LiuziqiOvO || GitHub
+  fas fa-envelope: mailto:your-email@example.com || Email
+
+# 页脚配置
+footer:
+  owner:
+    enable: true
+    since: 2024
+  custom_text: 
+  copyright: true
+
+# 阅读模式
+readmode: true
+
+# 夜间模式
+darkmode:
+  enable: true
+  button: true
+  autoChangeMode: false
+
 # 自定义样式
 inject:
   head:
+    - <style>
+        .link-card { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin: 20px 0; }
+        .link-item { background: var(--card-bg); border-radius: 12px; padding: 20px; transition: transform 0.3s; }
+        .link-item:hover { transform: translateY(-5px); }
+        .link-item a { text-decoration: none; color: var(--font-color); display: flex; align-items: center; }
+        .link-item img { width: 32px; height: 32px; margin-right: 15px; }
+        .link-item span { font-weight: bold; font-size: 16px; }
+        .link-item p { margin: 5px 0 0 47px; color: var(--minor); font-size: 14px; }
+      </style>
     - <link rel="stylesheet" href="/css/custom.css">
