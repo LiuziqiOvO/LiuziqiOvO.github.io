@@ -1,6 +1,13 @@
 # Butterfly 主题配置
 
+# Anthropic-style redesign branch: keep Butterfly structure, remove image-heavy chrome.
+
 # 导航菜单配置
+nav:
+  display_title: true
+  display_post_title: true
+  fixed: true
+
 menu:
   首页: / || fas fa-home
   归档: /archives/ || fas fa-archive
@@ -13,17 +20,35 @@ menu:
 favicon: /img/favicon.svg
 avatar:
   img: /img/头像.jpg
-  effect: true
+  effect: false
 
 # 网站背景
-background: /img/backgroud.jpg
+background: "#f5f1e8"
 
 # 顶部图
-index_img: /img/backgroud.jpg
-default_top_img: /img/backgroud.jpg
-archive_img: /img/backgroud.jpg
-tag_img: /img/backgroud.jpg
-category_img: /img/backgroud.jpg
+disable_top_img: false
+index_top_img_height: 58vh
+index_img: "linear-gradient(180deg, #f5f1e8 0%, #eee7dc 100%)"
+default_top_img: false
+archive_img: false
+tag_img: false
+category_img: false
+footer_img: false
+
+cover:
+  index_enable: false
+  aside_enable: false
+  archives_enable: false
+  default_cover:
+
+index_layout: 4
+
+subtitle:
+  enable: true
+  effect: false
+  source: false
+  sub:
+    - Systems, Storage, and Engineering Notes
 
 # 主页文章节选
 index_post_content:
@@ -40,15 +65,15 @@ aside:
   position: right
   card_author:
     enable: true
-    description: '欢迎来到我的博客'
+    description: '已被AI夺舍之人'
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
+      text: GitHub
       link: https://github.com/Ozqi
   card_announcement:
     enable: true
-    content: 欢迎访问本站，这里会分享一些技术文章和生活感悟。
+    content: 这里整理系统、数据库、存储和性能分析相关的学习笔记，也记录工程实践中的取舍与复盘。
   card_recent_post:
     enable: true
     limit: 5
@@ -78,33 +103,35 @@ highlight_lang: true
 # 主题色配置
 theme_color:
   enable: true
-  main: "#a4a3a3"
-  paginator: "#00c4b6"
-  button_hover: "#1c1c1c"
-  text_selection: "#00c4b6"
-  link_color: "#3498db"
-  meta_color: "#000000"
-  hr_color: "#A4D8FA"
-  code_foreground: "#F47466"
-  code_background: "rgba(27, 31, 35, .05)"
-  toc_color: "#1c1c1c"
-  blockquote_padding_color: "#1c1c1c"
-  blockquote_background_color: "#1c1c1c"
-  scrollbar_color: "#1c1c1c"
-  meta_theme_color_light: "#1c1c1c"
-  meta_theme_color_dark: "#1c1c1c"
+  main: "#141413"
+  paginator: "#cc785c"
+  button_hover: "#cc785c"
+  text_selection: "#cc785c"
+  link_color: "#9f4f37"
+  meta_color: "#6f6b61"
+  hr_color: "#d8d0c2"
+  code_foreground: "#7c3729"
+  code_background: "#eee7dc"
+  toc_color: "#9f4f37"
+  blockquote_padding_color: "#cc785c"
+  blockquote_background_color: "#eee7dc"
+  scrollbar_color: "#cc785c"
+  meta_theme_color_light: "#f5f1e8"
+  meta_theme_color_dark: "#141413"
 
 # 社交链接
 social:
-  Github: https://github.com/Ozqi || fab fa-github
-  E-Mail: mailto:1021578619@qq.com || fas fa-envelope
+  "fab fa-github": "https://github.com/Ozqi || GitHub"
+  "fas fa-envelope": "mailto:1021578619@qq.com || Email"
+  "fas fa-phone": "tel:15590245647 || Phone"
+  "fab fa-weixin": "/about/ || WeChat: 15590245647"
 
 # 页脚设置
 footer:
   owner:
     enable: true
     since: 2024
-  custom_text: 感谢访问！
+  custom_text: Built for notes that can be revisited.
   copyright: true
 
 # 文章版权声明
@@ -117,6 +144,13 @@ post_copyright:
 # 评论系统
 comments:
   use: false
+
+# 访问统计
+# 关闭 Busuanzi 默认站点统计，避免出现不可信的访客数/浏览量。
+busuanzi:
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # 页面加载动画
 preloader: true
@@ -170,3 +204,9 @@ darkmode:
   enable: true
   button: true
   autoChangeMode: false
+
+# 项目本地样式注入：只加载 source/css/custom.css，不修改主题包源码
+inject:
+  head:
+    - <link rel="stylesheet" href="/css/custom.css">
+  bottom:

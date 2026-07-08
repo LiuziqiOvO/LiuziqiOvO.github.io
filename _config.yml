@@ -4,13 +4,9 @@
 
 # Site
 title: DavLiu的博客
-subtitle:
-  enable : true
-  text : "Build Myself from Scratch"
-  effect: typing    # 支持 typing / fade / blink
-  speed: 100        # 打字速度
-description: '分享技术，记录生活'
-keywords: 技术,博客,编程
+subtitle: Systems, Storage, and Engineering Notes
+description: '记录系统、存储、数据库与工程实践中的问题、方法和复盘'
+keywords: 系统,存储,数据库,性能分析,Linux,工程实践
 author: Ziqi Liu
 language: zh-CN
 timezone: 'Asia/Shanghai'
@@ -69,7 +65,7 @@ index_generator:
   order_by: -date
 
 # Category & Tag
-default_category: uncategorized
+default_category: 技术笔记
 category_map:
 tag_map:
 

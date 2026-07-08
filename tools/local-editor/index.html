@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local Blog Editor</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="brand">
+        <div>
+          <h1>Blog Editor</h1>
+          <p>Local Markdown workspace</p>
+        </div>
+        <button id="refreshBtn" type="button" title="Refresh file list">↻</button>
+      </div>
+
+      <div class="new-file">
+        <select id="newRoot"></select>
+        <input id="newTitle" type="text" placeholder="新文章标题">
+        <input id="newSlug" type="text" placeholder="slug，例如 lsm-tree-notes">
+        <button id="newBtn" type="button">新建 Markdown</button>
+      </div>
+
+      <input id="filterInput" class="filter" type="search" placeholder="过滤文件">
+      <nav id="fileList" class="file-list"></nav>
+    </aside>
+
+    <main class="editor">
+      <header class="toolbar">
+        <div class="current-file">
+          <span id="currentPath">未选择文件</span>
+          <span id="dirtyFlag" class="dirty" hidden>未保存</span>
+        </div>
+        <div class="actions">
+          <span id="statusText"></span>
+          <button id="saveBtn" type="button" disabled>保存</button>
+        </div>
+      </header>
+
+      <textarea id="editorInput" spellcheck="false" placeholder="从左侧选择 Markdown 文件开始编辑"></textarea>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
