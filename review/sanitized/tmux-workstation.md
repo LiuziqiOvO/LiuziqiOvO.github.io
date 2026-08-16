@@ -1,5 +1,5 @@
 ---
-title: Tmux：把终端会话变成可恢复工作台
+title: 把古法工具配置成Agent工作台
 date: 2026-08-12 02:45:00
 categories:
   - 开发工具
@@ -10,9 +10,13 @@ tags:
 description: 安装并配置 tmux、oh-my-tmux、会话恢复、快速切换和任务完成通知。
 ---
 
-<!-- AUTO-GENERATED from WIKI/古法工具/Tmux.md sha256:f426f0c925597d6421f1c830c3897dedabaa1c2bda7e21c0efe3846bdc2d281c; edit the source note, not this file. -->
+<!-- AUTO-GENERATED from WIKI/古法工具/Tmux.md sha256:dc8d38f6df4b529b593640aa873d1a33071a3c3967fa3e60e45f645e58489fd5; edit the source note, not this file. -->
 
 > 安装 tmux 和 oh-my-tmux 后，可用本页记录配置、快捷键、插件与多会话工作流。
+
+![Pasted image 20260803203925](/img/tmux-workstation/Pasted-image-20260803203925.png)
+
+![Pasted image 20260817020558](/img/tmux-workstation/Pasted-image-20260817020558.png)
 
 有什么用？
 1. SSH断开后可以保活，连接服务器使用Claude Code、Codex，PC和服务器断联不会打断会话。
