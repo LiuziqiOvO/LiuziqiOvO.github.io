@@ -16,7 +16,7 @@
       "preserve source frontmatter tags after normalizing # and slash for Hexo"
     ]
   },
-  "qualified_count": 4,
+  "qualified_count": 6,
   "excluded_count": 132,
   "qualified": [
     {
@@ -50,20 +50,16 @@
       "headings": 11
     },
     {
-      "rel": "Web/Tauri 桌面应用开发.md",
-      "title": "Tauri 桌面应用开发",
-      "slug": "web-tauri-e58f74",
+      "rel": "Agent相关/御三家的三种Subagent设计思路.md",
+      "title": "Subagent 策略",
+      "slug": "agent-subagent-91595e",
       "tags": [
-        "Web",
-        "Tauri 桌面应用开发",
-        "frontend/tauri",
-        "tooling/desktop",
-        "rust",
-        "project/open-source",
-        "project/desktop"
+        "Agent",
+        "御三家的三种Subagent设计思路",
+        "agent/subagent"
       ],
-      "chars": 1657,
-      "headings": 8
+      "chars": 958,
+      "headings": 4
     },
     {
       "rel": "古法工具/git worktree 与多 Agent 协作.md",
@@ -78,21 +74,50 @@
       ],
       "chars": 3907,
       "headings": 17
+    },
+    {
+      "rel": "古法工具/Oh-my-zsh.md",
+      "title": "Oh My Zsh",
+      "slug": "oh-my-zsh-be0113",
+      "tags": [
+        "开发工具",
+        "Oh-my-zsh",
+        "tooling/shell"
+      ],
+      "chars": 1619,
+      "headings": 13
+    },
+    {
+      "rel": "Web/Tauri 桌面应用开发.md",
+      "title": "Tauri 桌面应用开发",
+      "slug": "web-tauri-e58f74",
+      "tags": [
+        "Web",
+        "Tauri 桌面应用开发",
+        "frontend/tauri",
+        "tooling/desktop",
+        "rust",
+        "project/open-source",
+        "project/desktop"
+      ],
+      "chars": 1657,
+      "headings": 8
     }
   ],
   "strict_review": {
     "reason": "Stricter article-quality pass after review: remove snippets, cheatsheets, command lists, thin notes, and all C++ related posts.",
-    "kept_count": 4,
-    "removed_count": 22,
+    "kept_count": 6,
+    "removed_count": 20,
     "kept_slugs": [
       "agent-llm-wiki-c590d8",
       "agent-skilllens-skillopt-22c8a2",
-      "web-tauri-e58f74",
-      "git-worktree-agent-f0df3c"
+      "agent-subagent-91595e",
+      "git-worktree-agent-f0df3c",
+      "oh-my-zsh-be0113",
+      "web-tauri-e58f74"
     ],
     "removed_slugs": [
       "ai-infra-19a2e7",
-      "agent-subagent-91595e",
       "os-linux-io-9c0071",
       "os-linux-pcie-7853e9",
       "os-linux-shell-faf63f",
@@ -104,7 +129,6 @@
       "wiki-post-b5661e",
       "conventional-commits-9c19a3",
       "wiki-post-6ed43b",
-      "oh-my-zsh-be0113",
       "prompt-agent-a196e6",
       "prompt-riper5-638bb1",
       "wiki-post-2fcc72",
@@ -113,6 +137,10 @@
       "wiki-post-1724a1",
       "wiki-post-ce59eb",
       "wiki-post-d253ca"
+    ],
+    "restored_after_review": [
+      "oh-my-zsh-be0113",
+      "agent-subagent-91595e"
     ]
   }
 }
