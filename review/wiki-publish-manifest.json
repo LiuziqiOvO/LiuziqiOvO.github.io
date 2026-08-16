@@ -16,23 +16,9 @@
       "preserve source frontmatter tags after normalizing # and slash for Hexo"
     ]
   },
-  "qualified_count": 26,
+  "qualified_count": 4,
   "excluded_count": 132,
   "qualified": [
-    {
-      "rel": "AI infra/强化学习.md",
-      "title": "强化学习",
-      "slug": "ai-infra-19a2e7",
-      "tags": [
-        "AI Infra",
-        "强化学习",
-        "idea",
-        "reinforcement-learning",
-        "machine-learning"
-      ],
-      "chars": 1456,
-      "headings": 8
-    },
     {
       "rel": "Agent相关/LLM wiki.md",
       "title": "LLM Wiki",
@@ -64,108 +50,6 @@
       "headings": 11
     },
     {
-      "rel": "Agent相关/御三家的三种Subagent设计思路.md",
-      "title": "Subagent 策略",
-      "slug": "agent-subagent-91595e",
-      "tags": [
-        "Agent",
-        "御三家的三种Subagent设计思路",
-        "agent/subagent"
-      ],
-      "chars": 958,
-      "headings": 4
-    },
-    {
-      "rel": "OS/linux-IO.md",
-      "title": "linux-IO",
-      "slug": "os-linux-io-9c0071",
-      "tags": [
-        "操作系统",
-        "linux-IO"
-      ],
-      "chars": 1383,
-      "headings": 6
-    },
-    {
-      "rel": "OS/linux-PCIe.md",
-      "title": "linux-PCIe",
-      "slug": "os-linux-pcie-7853e9",
-      "tags": [
-        "操作系统",
-        "linux-PCIe"
-      ],
-      "chars": 1912,
-      "headings": 12
-    },
-    {
-      "rel": "OS/linux-shell、管道符.md",
-      "title": "linux-shell、管道符",
-      "slug": "os-linux-shell-faf63f",
-      "tags": [
-        "操作系统",
-        "linux-shell、管道符"
-      ],
-      "chars": 1556,
-      "headings": 4
-    },
-    {
-      "rel": "OS/linux-内存.md",
-      "title": "linux-内存",
-      "slug": "os-linux-151cde",
-      "tags": [
-        "操作系统",
-        "linux-内存"
-      ],
-      "chars": 2644,
-      "headings": 13
-    },
-    {
-      "rel": "OS/linux-环境变量、守护进程.md",
-      "title": "linux-环境变量、守护进程",
-      "slug": "os-linux-627ede",
-      "tags": [
-        "操作系统",
-        "linux-环境变量、守护进程"
-      ],
-      "chars": 1073,
-      "headings": 5
-    },
-    {
-      "rel": "OS/linux-用户管理.md",
-      "title": "linux-用户管理",
-      "slug": "os-linux-0a7d31",
-      "tags": [
-        "操作系统",
-        "linux-用户管理"
-      ],
-      "chars": 2212,
-      "headings": 10
-    },
-    {
-      "rel": "Storage/S3 对象存储.md",
-      "title": "S3 对象存储",
-      "slug": "storage-s3-23208d",
-      "tags": [
-        "存储系统",
-        "S3 对象存储",
-        "storage/object-storage"
-      ],
-      "chars": 2174,
-      "headings": 7
-    },
-    {
-      "rel": "Storage/哈希.md",
-      "title": "哈希",
-      "slug": "wiki-post-8df295",
-      "tags": [
-        "存储系统",
-        "哈希",
-        "storage/hash"
-      ],
-      "chars": 2392,
-      "headings": 5
-    },
-    {
       "rel": "Web/Tauri 桌面应用开发.md",
       "title": "Tauri 桌面应用开发",
       "slug": "web-tauri-e58f74",
@@ -182,119 +66,6 @@
       "headings": 8
     },
     {
-      "rel": "古法工具/Codex 配置与上下文注入.md",
-      "title": "Codex 配置与上下文注入",
-      "slug": "wiki-post-b5661e",
-      "tags": [
-        "开发工具",
-        "Codex 配置与上下文注入",
-        "tooling/codex",
-        "context-engineering"
-      ],
-      "chars": 1167,
-      "headings": 5
-    },
-    {
-      "rel": "古法工具/Conventional Commits.md",
-      "title": "Conventional Commits",
-      "slug": "conventional-commits-9c19a3",
-      "tags": [
-        "开发工具",
-        "Conventional Commits",
-        "tooling/git",
-        "release"
-      ],
-      "chars": 1113,
-      "headings": 6
-    },
-    {
-      "rel": "古法工具/IO测试工具.md",
-      "title": "IO测试工具",
-      "slug": "wiki-post-6ed43b",
-      "tags": [
-        "开发工具",
-        "IO测试工具"
-      ],
-      "chars": 1484,
-      "headings": 6
-    },
-    {
-      "rel": "古法工具/Oh-my-zsh.md",
-      "title": "Oh My Zsh",
-      "slug": "oh-my-zsh-be0113",
-      "tags": [
-        "开发工具",
-        "Oh-my-zsh",
-        "tooling/shell"
-      ],
-      "chars": 1619,
-      "headings": 13
-    },
-    {
-      "rel": "古法工具/Prompt-Agent 设计.md",
-      "title": "Prompt-Agent 设计",
-      "slug": "prompt-agent-a196e6",
-      "tags": [
-        "开发工具",
-        "Prompt-Agent 设计",
-        "tooling",
-        "prompt",
-        "agent"
-      ],
-      "chars": 1094,
-      "headings": 5
-    },
-    {
-      "rel": "古法工具/Prompt-RIPER5工程开发流程.md",
-      "title": "Prompt-工程开发流程",
-      "slug": "prompt-riper5-638bb1",
-      "tags": [
-        "开发工具",
-        "Prompt-RIPER5工程开发流程",
-        "tooling",
-        "prompt",
-        "workflow"
-      ],
-      "chars": 1196,
-      "headings": 15
-    },
-    {
-      "rel": "古法工具/Prompt.md",
-      "title": "Prompt",
-      "slug": "wiki-post-2fcc72",
-      "tags": [
-        "开发工具",
-        "Prompt",
-        "tooling",
-        "prompt"
-      ],
-      "chars": 1328,
-      "headings": 9
-    },
-    {
-      "rel": "古法工具/Tool.md",
-      "title": "工具杂项",
-      "slug": "wiki-post-bc5706",
-      "tags": [
-        "开发工具",
-        "Tool",
-        "tooling"
-      ],
-      "chars": 1953,
-      "headings": 17
-    },
-    {
-      "rel": "古法工具/Vim.md",
-      "title": "Vim",
-      "slug": "wiki-post-af712a",
-      "tags": [
-        "开发工具",
-        "Vim"
-      ],
-      "chars": 5094,
-      "headings": 8
-    },
-    {
       "rel": "古法工具/git worktree 与多 Agent 协作.md",
       "title": "git worktree 与多 Agent 协作",
       "slug": "git-worktree-agent-f0df3c",
@@ -307,47 +78,41 @@
       ],
       "chars": 3907,
       "headings": 17
-    },
-    {
-      "rel": "基础语法/C++/C++ 基础速查.md",
-      "title": "C++ 基础速查",
-      "slug": "wiki-post-1724a1",
-      "tags": [
-        "编程语言",
-        "C++",
-        "#基础",
-        "#语法",
-        "#cpp"
-      ],
-      "chars": 1160,
-      "headings": 9
-    },
-    {
-      "rel": "基础语法/C++/C++ 并发编程.md",
-      "title": "C++ 并发编程",
-      "slug": "wiki-post-ce59eb",
-      "tags": [
-        "编程语言",
-        "C++",
-        "programming-language/cpp",
-        "concurrency"
-      ],
-      "chars": 10992,
-      "headings": 20
-    },
-    {
-      "rel": "基础语法/C++/C++ 并发速查.md",
-      "title": "C++ 并发速查",
-      "slug": "wiki-post-d253ca",
-      "tags": [
-        "编程语言",
-        "C++",
-        "programming-language/cpp",
-        "cpp/concurrency",
-        "cheatsheet"
-      ],
-      "chars": 1780,
-      "headings": 10
     }
-  ]
+  ],
+  "strict_review": {
+    "reason": "Stricter article-quality pass after review: remove snippets, cheatsheets, command lists, thin notes, and all C++ related posts.",
+    "kept_count": 4,
+    "removed_count": 22,
+    "kept_slugs": [
+      "agent-llm-wiki-c590d8",
+      "agent-skilllens-skillopt-22c8a2",
+      "web-tauri-e58f74",
+      "git-worktree-agent-f0df3c"
+    ],
+    "removed_slugs": [
+      "ai-infra-19a2e7",
+      "agent-subagent-91595e",
+      "os-linux-io-9c0071",
+      "os-linux-pcie-7853e9",
+      "os-linux-shell-faf63f",
+      "os-linux-151cde",
+      "os-linux-627ede",
+      "os-linux-0a7d31",
+      "storage-s3-23208d",
+      "wiki-post-8df295",
+      "wiki-post-b5661e",
+      "conventional-commits-9c19a3",
+      "wiki-post-6ed43b",
+      "oh-my-zsh-be0113",
+      "prompt-agent-a196e6",
+      "prompt-riper5-638bb1",
+      "wiki-post-2fcc72",
+      "wiki-post-bc5706",
+      "wiki-post-af712a",
+      "wiki-post-1724a1",
+      "wiki-post-ce59eb",
+      "wiki-post-d253ca"
+    ]
+  }
 }
